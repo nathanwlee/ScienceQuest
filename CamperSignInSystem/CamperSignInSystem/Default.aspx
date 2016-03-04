@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>Science Quest Camper System Website</h1>
         <p class="lead">
-            <asp:Image ID="ScienceQuestLogo" runat="server" Height="156px" Width="785px" ImageUrl="~/Images/ScienceQuestLogo.png" style="margin-left: 62px" />
+            <asp:Image ID="ScienceQuestLogo" runat="server" Height="170px" Width="80%" ImageUrl="~/Images/ScienceQuestLogo.png" style="margin-left: 38px" />
         </p>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
