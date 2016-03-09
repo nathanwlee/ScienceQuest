@@ -202,6 +202,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CamperSearch.aspx" />
+    <Content Include="ExtraCopyWebPage.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -384,6 +386,20 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CamperSearch.aspx.cs">
+      <DependentUpon>CamperSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CamperSearch.aspx.designer.cs">
+      <DependentUpon>CamperSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraCopyWebPage.aspx.cs">
+      <DependentUpon>ExtraCopyWebPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraCopyWebPage.aspx.designer.cs">
+      <DependentUpon>ExtraCopyWebPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
