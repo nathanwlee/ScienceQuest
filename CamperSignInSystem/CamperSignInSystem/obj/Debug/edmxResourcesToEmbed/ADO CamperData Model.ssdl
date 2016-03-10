@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CamperInfoTableModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CamperInfoTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="First Name" Type="nchar" MaxLength="30" />
+    <Property Name="Last Name" Type="nchar" MaxLength="30" />
+    <Property Name="Self Sign" Type="nchar" MaxLength="5" />
+    <Property Name="Approved Pick Up" Type="nchar" MaxLength="200" />
+    <Property Name="Sign In Signature" Type="nchar" MaxLength="30" />
+    <Property Name="Time In" Type="nchar" MaxLength="30" />
+    <Property Name="Sign Out SIgnature" Type="nchar" MaxLength="30" />
+    <Property Name="Time Out" Type="nchar" MaxLength="30" />
+  </EntityType>
+  <EntityContainer Name="CamperInfoTableModelStoreContainer">
+    <EntitySet Name="CamperInfoTable" EntityType="Self.CamperInfoTable" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

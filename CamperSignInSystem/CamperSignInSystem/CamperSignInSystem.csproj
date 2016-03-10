@@ -81,6 +81,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -198,12 +200,22 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="ADO CamperData Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ADO CamperData Model.edmx</DependentUpon>
+      <LastGenOutput>ADO CamperData Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ADO CamperData Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ADO CamperData Model.edmx</DependentUpon>
+      <LastGenOutput>ADO CamperData Model.cs</LastGenOutput>
+    </Content>
+    <Content Include="DatabaseUpdatePage.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CamperSearch.aspx" />
-    <Content Include="ExtraCopyWebPage.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -212,7 +224,15 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EntityDeploy Include="ADO CamperData Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ADO CamperData Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ADO CamperData Model.edmx.diagram">
+      <DependentUpon>ADO CamperData Model.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="ForceCommitForm1.aspx" />
     <Content Include="Images\ScienceQuestLogo.png" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
@@ -369,6 +389,21 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ADO CamperData Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADO CamperData Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO CamperData Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADO CamperData Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADO CamperData Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADO CamperData Model.edmx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -380,6 +415,16 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="CamperInfoTable.cs">
+      <DependentUpon>ADO CamperData Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseUpdatePage.aspx.cs">
+      <DependentUpon>DatabaseUpdatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatabaseUpdatePage.aspx.designer.cs">
+      <DependentUpon>DatabaseUpdatePage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -394,19 +439,19 @@
     <Compile Include="CamperSearch.aspx.designer.cs">
       <DependentUpon>CamperSearch.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExtraCopyWebPage.aspx.cs">
-      <DependentUpon>ExtraCopyWebPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ExtraCopyWebPage.aspx.designer.cs">
-      <DependentUpon>ExtraCopyWebPage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForceCommitForm1.aspx.cs">
+      <DependentUpon>ForceCommitForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForceCommitForm1.aspx.designer.cs">
+      <DependentUpon>ForceCommitForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -438,6 +483,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
