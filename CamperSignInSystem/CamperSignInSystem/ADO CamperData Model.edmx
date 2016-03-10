@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CamperInfoTableModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CamperInfoTable">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="First Name" Type="nchar" MaxLength="30" />
+          <Property Name="Last Name" Type="nchar" MaxLength="30" />
+          <Property Name="Self Sign" Type="nchar" MaxLength="5" />
+          <Property Name="Approved Pick Up" Type="nchar" MaxLength="200" />
+          <Property Name="Sign In Signature" Type="nchar" MaxLength="30" />
+          <Property Name="Time In" Type="nchar" MaxLength="30" />
+          <Property Name="Sign Out SIgnature" Type="nchar" MaxLength="30" />
+          <Property Name="Time Out" Type="nchar" MaxLength="30" />
+        </EntityType>
+        <EntityContainer Name="CamperInfoTableModelStoreContainer">
+          <EntitySet Name="CamperInfoTable" EntityType="Self.CamperInfoTable" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CamperInfoTableModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CamperInfoTable">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="First_Name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Last_Name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Self_Sign" Type="String" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Name="Approved_Pick_Up" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+          <Property Name="Sign_In_Signature" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Time_In" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Sign_Out_SIgnature" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Time_Out" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="CamperDataEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CamperInfoTables" EntityType="Self.CamperInfoTable" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CamperInfoTableModelStoreContainer" CdmEntityContainer="CamperDataEntities">
+          <EntitySetMapping Name="CamperInfoTables">
+            <EntityTypeMapping TypeName="CamperInfoTableModel.CamperInfoTable">
+              <MappingFragment StoreEntitySet="CamperInfoTable">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="First_Name" ColumnName="First Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+                <ScalarProperty Name="Self_Sign" ColumnName="Self Sign" />
+                <ScalarProperty Name="Approved_Pick_Up" ColumnName="Approved Pick Up" />
+                <ScalarProperty Name="Sign_In_Signature" ColumnName="Sign In Signature" />
+                <ScalarProperty Name="Time_In" ColumnName="Time In" />
+                <ScalarProperty Name="Sign_Out_SIgnature" ColumnName="Sign Out SIgnature" />
+                <ScalarProperty Name="Time_Out" ColumnName="Time Out" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

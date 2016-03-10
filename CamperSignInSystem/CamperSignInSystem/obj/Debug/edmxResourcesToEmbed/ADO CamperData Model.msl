@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CamperInfoTableModelStoreContainer" CdmEntityContainer="CamperDataEntities">
+    <EntitySetMapping Name="CamperInfoTables">
+      <EntityTypeMapping TypeName="CamperInfoTableModel.CamperInfoTable">
+        <MappingFragment StoreEntitySet="CamperInfoTable">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="First_Name" ColumnName="First Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+          <ScalarProperty Name="Self_Sign" ColumnName="Self Sign" />
+          <ScalarProperty Name="Approved_Pick_Up" ColumnName="Approved Pick Up" />
+          <ScalarProperty Name="Sign_In_Signature" ColumnName="Sign In Signature" />
+          <ScalarProperty Name="Time_In" ColumnName="Time In" />
+          <ScalarProperty Name="Sign_Out_SIgnature" ColumnName="Sign Out SIgnature" />
+          <ScalarProperty Name="Time_Out" ColumnName="Time Out" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
