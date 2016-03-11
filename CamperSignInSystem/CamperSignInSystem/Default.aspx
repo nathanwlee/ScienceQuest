@@ -12,6 +12,23 @@
 
     <div class="row">
         <div class="col-md-4">
+            <asp:LoginView ID="LoginView1" runat="server">
+                <AnonymousTemplate>
+                    You are not logged in. Click the sign in to log in with your username and password
+                </AnonymousTemplate>
+                <LoggedInTemplate>
+                    Welcome! You are logged in,
+                    <asp:LoginName ID="LoginName1" runat="server" />
+                    &nbsp;
+                </LoggedInTemplate>
+            </asp:LoginView>
+            <h2>
+                <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            </h2>
+            <p>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MemberPages/Members.aspx">Members Only Page</asp:HyperLink>
+            </p>
+            <p>&nbsp;</p>
             <h2>Camper Sign-In / Sign-Out System</h2>
             <p>
                 ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.

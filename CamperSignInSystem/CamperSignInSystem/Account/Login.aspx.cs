@@ -57,5 +57,10 @@ namespace CamperSignInSystem.Account
                 }
             }
         }
+
+        protected void Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
