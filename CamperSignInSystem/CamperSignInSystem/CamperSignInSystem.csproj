@@ -232,7 +232,7 @@
       <DependentUpon>ADO CamperData Model.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="ForceCommitForm1.aspx" />
+    <Content Include="ForceCommit2.aspx" />
     <Content Include="Images\ScienceQuestLogo.png" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
@@ -446,12 +446,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ForceCommitForm1.aspx.cs">
-      <DependentUpon>ForceCommitForm1.aspx</DependentUpon>
+    <Compile Include="ForceCommit2.aspx.cs">
+      <DependentUpon>ForceCommit2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ForceCommitForm1.aspx.designer.cs">
-      <DependentUpon>ForceCommitForm1.aspx</DependentUpon>
+    <Compile Include="ForceCommit2.aspx.designer.cs">
+      <DependentUpon>ForceCommit2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -483,6 +483,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ImportedExcelFile\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

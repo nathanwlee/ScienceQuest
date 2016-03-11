@@ -33,7 +33,7 @@
                 </div>
             </EmptyDataTemplate>
             <Columns><%--below is the code that formats the columns in the grid view data table (TEMPORARY ON THIS PAGE)--%>
-                <asp:BoundField HeaderText="ID Number" DataField="ID Number" />
+                <asp:BoundField HeaderText="ID" DataField="ID" />
                 <asp:BoundField HeaderText="First Name" DataField="First Name" />
                 <asp:BoundField HeaderText="Last Name" DataField="Last Name" />
                 <asp:BoundField HeaderText="Self Sign" DataField="Self Sign" />

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ForceCommitForm1.aspx.cs" Inherits="CamperSignInSystem.ForceCommitForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ForceCommit2.aspx.cs" Inherits="CamperSignInSystem.ForceCommit2" %>
 
 <!DOCTYPE html>
 

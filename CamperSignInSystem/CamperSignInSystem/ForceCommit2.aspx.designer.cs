@@ -11,7 +11,7 @@ namespace CamperSignInSystem
 {
 
 
-    public partial class ForceCommitForm1
+    public partial class ForceCommit2
     {
 
         /// <summary>
