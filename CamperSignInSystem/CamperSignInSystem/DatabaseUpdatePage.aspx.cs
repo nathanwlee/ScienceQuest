@@ -52,7 +52,7 @@ namespace CamperSignInSystem
                     }
 
                     //select data that it wants
-                    string query = "Select [ID],[First Name],[Last Name],[Self Sign],[Approved Pick Up],[Sign In Signature],[Time In],[Sign Out Signature],[Time Out] from [CamperExcelSheet$]";
+                    string query = "Select [ID],[First Name],[Last Name],[Self Sign],[Approved Pick Up],[Sign In Signature],[Time In],[Sign Out Signature],[Time Out] from [CamperData$]";
                     OleDbConnection con = new OleDbConnection(conString);
                     //open file, fill data, close file
                     if(con.State == System.Data.ConnectionState.Closed)
@@ -115,6 +115,9 @@ namespace CamperSignInSystem
                 catch(Exception)
                 {
                     throw;
+                    //An exception of type 'System.Data.OleDb.OleDbException' occurred in CamperSignInSystem.dll but was not handled in user code
+                    //Additional information: No value given for one or more required parameters
+                    //But there is...?
                 }
             }
         }
