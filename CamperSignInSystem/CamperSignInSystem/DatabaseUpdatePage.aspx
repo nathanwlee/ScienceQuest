@@ -34,14 +34,14 @@
             </EmptyDataTemplate>
             <Columns><%--below is the code that formats the columns in the grid view data table (TEMPORARY ON THIS PAGE)--%>
                 <asp:BoundField HeaderText="ID" DataField="ID" />
-                <asp:BoundField HeaderText="First Name" DataField="First Name" />
-                <asp:BoundField HeaderText="Last Name" DataField="Last Name" />
-                <asp:BoundField HeaderText="Self Sign" DataField="Self Sign" />
-                <asp:BoundField HeaderText="Approved Pick Up" DataField="Approved Pick Up" />
-                <asp:BoundField HeaderText="Sign In Signature" DataField="Sign In Signature" />
-                <asp:BoundField HeaderText="Time In" DataField="Time In" />
-                <asp:BoundField HeaderText="Sign Out Signature" DataField="Sign Out Signature" />
-                <asp:BoundField HeaderText="Time Out" DataField="Time Out" />
+                <asp:BoundField HeaderText="First Name" DataField="First_Name" />
+                <asp:BoundField HeaderText="Last Name" DataField="Last_Name" />
+                <asp:BoundField HeaderText="Self Sign" DataField="Self_Sign" />
+                <asp:BoundField HeaderText="Approved Pick Up" DataField="Approved_Pick_Up" />
+                <asp:BoundField HeaderText="Sign In Signature" DataField="Sign_In_Signature" />
+                <asp:BoundField HeaderText="Time In" DataField="Time_In" />
+                <asp:BoundField HeaderText="Sign Out Signature" DataField="Sign_Out_Signature" />
+                <asp:BoundField HeaderText="Time Out" DataField="Time_Out" />
             </Columns>
         </asp:GridView>
     </div>

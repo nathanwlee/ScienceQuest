@@ -22,21 +22,30 @@ namespace CamperSignInSystem {
         protected global::System.Web.UI.WebControls.Image ScienceQuestLogo;
         
         /// <summary>
-        /// TextBox1 control.
+        /// FirstNameSearchBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox FirstNameSearchBox;
         
         /// <summary>
-        /// CamperSearchButton control.
+        /// LastNameSearchBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CamperSearchButton;
+        protected global::System.Web.UI.WebControls.TextBox LastNameSearchBox;
+        
+        /// <summary>
+        /// SearchButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SearchButton;
     }
 }
