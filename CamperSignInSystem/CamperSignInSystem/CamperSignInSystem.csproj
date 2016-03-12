@@ -231,8 +231,18 @@
     <Content Include="ADO CamperData Model.edmx.diagram">
       <DependentUpon>ADO CamperData Model.edmx</DependentUpon>
     </Content>
+    <Content Include="App_Code\CamperDataSet.xsc">
+      <DependentUpon>CamperDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="App_Code\CamperDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CamperDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="App_Code\CamperDataSet.xss">
+      <DependentUpon>CamperDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="ForceCommit2.aspx" />
     <Content Include="Images\ScienceQuestLogo.png" />
     <Content Include="MemberPages\Member.aspx" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
@@ -416,6 +426,14 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Code\CamperDataSet.cs">
+      <DependentUpon>CamperDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\CamperDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CamperDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CamperInfoTable.cs">
       <DependentUpon>ADO CamperData Model.tt</DependentUpon>
     </Compile>
@@ -446,13 +464,6 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ForceCommit2.aspx.cs">
-      <DependentUpon>ForceCommit2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ForceCommit2.aspx.designer.cs">
-      <DependentUpon>ForceCommit2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
