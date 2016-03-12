@@ -20,9 +20,9 @@ namespace CamperSignInSystem.App_Code {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("CamperDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("CamperSearchDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class CamperDataSet : global::System.Data.DataSet {
+    public partial class CamperSearchDataSet : global::System.Data.DataSet {
         
         private CamperInfoTableDataTable tableCamperInfoTable;
         
@@ -30,7 +30,7 @@ namespace CamperSignInSystem.App_Code {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public CamperDataSet() {
+        public CamperSearchDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace CamperSignInSystem.App_Code {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected CamperDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected CamperSearchDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace CamperSignInSystem.App_Code {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            CamperDataSet cln = ((CamperDataSet)(base.Clone()));
+            CamperSearchDataSet cln = ((CamperSearchDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace CamperSignInSystem.App_Code {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "CamperDataSet";
+            this.DataSetName = "CamperSearchDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/CamperDataSet.xsd";
+            this.Namespace = "http://tempuri.org/CamperSearchDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableCamperInfoTable = new CamperInfoTableDataTable();
@@ -225,7 +225,7 @@ namespace CamperSignInSystem.App_Code {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            CamperDataSet ds = new CamperDataSet();
+            CamperSearchDataSet ds = new CamperSearchDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -591,7 +591,7 @@ namespace CamperSignInSystem.App_Code {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                CamperDataSet ds = new CamperDataSet();
+                CamperSearchDataSet ds = new CamperSearchDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -935,7 +935,7 @@ namespace CamperSignInSystem.App_Code {
         }
     }
 }
-namespace CamperSignInSystem.App_Code.CamperDataSetTableAdapters {
+namespace CamperSignInSystem.App_Code.CamperSearchDataSetTableAdapters {
     
     
     /// <summary>
@@ -1132,7 +1132,7 @@ namespace CamperSignInSystem.App_Code.CamperDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(CamperDataSet.CamperInfoTableDataTable dataTable) {
+        public virtual int Fill(CamperSearchDataSet.CamperInfoTableDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1145,9 +1145,9 @@ namespace CamperSignInSystem.App_Code.CamperDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual CamperDataSet.CamperInfoTableDataTable GetData() {
+        public virtual CamperSearchDataSet.CamperInfoTableDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            CamperDataSet.CamperInfoTableDataTable dataTable = new CamperDataSet.CamperInfoTableDataTable();
+            CamperSearchDataSet.CamperInfoTableDataTable dataTable = new CamperSearchDataSet.CamperInfoTableDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1156,7 +1156,7 @@ namespace CamperSignInSystem.App_Code.CamperDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByFirstLast(CamperDataSet.CamperInfoTableDataTable dataTable) {
+        public virtual int FillByFL(CamperSearchDataSet.CamperInfoTableDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1169,9 +1169,9 @@ namespace CamperSignInSystem.App_Code.CamperDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual CamperDataSet.CamperInfoTableDataTable GetDataByFirstLast() {
+        public virtual CamperSearchDataSet.CamperInfoTableDataTable GetDataByFL() {
             this.Adapter.SelectCommand = this.CommandCollection[1];
-            CamperDataSet.CamperInfoTableDataTable dataTable = new CamperDataSet.CamperInfoTableDataTable();
+            CamperSearchDataSet.CamperInfoTableDataTable dataTable = new CamperSearchDataSet.CamperInfoTableDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1179,14 +1179,14 @@ namespace CamperSignInSystem.App_Code.CamperDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(CamperDataSet.CamperInfoTableDataTable dataTable) {
+        public virtual int Update(CamperSearchDataSet.CamperInfoTableDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(CamperDataSet dataSet) {
+        public virtual int Update(CamperSearchDataSet dataSet) {
             return this.Adapter.Update(dataSet, "CamperInfoTable");
         }
         
@@ -1468,7 +1468,7 @@ namespace CamperSignInSystem.App_Code.CamperDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(CamperDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(CamperSearchDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._camperInfoTableTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.CamperInfoTable.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1487,7 +1487,7 @@ namespace CamperSignInSystem.App_Code.CamperDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(CamperDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(CamperSearchDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._camperInfoTableTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.CamperInfoTable.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1505,7 +1505,7 @@ namespace CamperSignInSystem.App_Code.CamperDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(CamperDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(CamperSearchDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._camperInfoTableTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.CamperInfoTable.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1547,7 +1547,7 @@ namespace CamperSignInSystem.App_Code.CamperDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(CamperDataSet dataSet) {
+        public virtual int UpdateAll(CamperSearchDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
