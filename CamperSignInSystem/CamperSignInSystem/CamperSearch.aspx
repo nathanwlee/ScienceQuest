@@ -16,7 +16,6 @@
             <h2>Use the search boxes below to refine the search for a camper </h2>
             <p>
                 First Name:<asp:TextBox ID="FirstNameSearchBox" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last Name:<asp:TextBox ID="LastNameSearchBox" runat="server"></asp:TextBox>
                 <asp:Button ID="SearchButton" runat="server" style="margin-left: 8px" Text="Search" OnClick="SearchButton_Click" />
             </p>
             <p>
@@ -33,10 +32,9 @@
                         <asp:BoundField DataField="Time Out" HeaderText="Time Out" SortExpression="Time Out" />
                     </Columns>
                 </asp:GridView>
-                <asp:SqlDataSource ID="CamperDataForSearch" runat="server" ConnectionString="<%$ ConnectionStrings:aspnet-CamperSignInSystem-20160302035746ConnectionString1 %>" SelectCommand="SELECT * FROM [CamperInfoTable] WHERE (([First Name] LIKE '%' + @First_Name + '%') AND ([Last Name] LIKE '%' + @Last_Name + '%'))">
+                <asp:SqlDataSource ID="CamperDataForSearch" runat="server" ConnectionString="<%$ ConnectionStrings:aspnet-CamperSignInSystem-20160302035746ConnectionString1 %>" SelectCommand="SELECT * FROM [CamperInfoTable] WHERE ([First Name] LIKE '%' + @First_Name + '%')">
                     <SelectParameters>
                         <asp:ControlParameter ControlID="FirstNameSearchBox" Name="First_Name" PropertyName="Text" Type="String" />
-                        <asp:ControlParameter ControlID="LastNameSearchBox" Name="Last_Name" PropertyName="Text" Type="String" />
                     </SelectParameters>
                 </asp:SqlDataSource>
             </p>
