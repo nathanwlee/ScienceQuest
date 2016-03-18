@@ -189,7 +189,7 @@
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
     <Content Include="Account\Lockout.aspx" />
-    <Content Include="Account\Login.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Account\Manage.aspx" />
     <Content Include="Account\ManageLogins.aspx" />
     <Content Include="Account\ManagePassword.aspx" />
@@ -210,12 +210,16 @@
       <DependentUpon>ADO CamperData Model.edmx</DependentUpon>
       <LastGenOutput>ADO CamperData Model.cs</LastGenOutput>
     </Content>
+    <Content Include="App_Data\aspnet-CamperSignInSystem-20160302035746.mdf" />
+    <Content Include="App_Data\aspnet-CamperSignInSystem-20160302035746_log.ldf">
+      <DependentUpon>aspnet-CamperSignInSystem-20160302035746.mdf</DependentUpon>
+    </Content>
+    <Content Include="CamperSearch.aspx" />
     <Content Include="DatabaseUpdatePage.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="CamperSearch.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -231,8 +235,18 @@
     <Content Include="ADO CamperData Model.edmx.diagram">
       <DependentUpon>ADO CamperData Model.edmx</DependentUpon>
     </Content>
+    <Content Include="App_Code\CamperSearchDataSet.xsc">
+      <DependentUpon>CamperSearchDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="App_Code\CamperSearchDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CamperSearchDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="App_Code\CamperSearchDataSet.xss">
+      <DependentUpon>CamperSearchDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="ForceCommit2.aspx" />
     <Content Include="Images\ScienceQuestLogo.png" />
     <Content Include="MemberPages\Member.aspx" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
@@ -313,11 +327,11 @@
     <Compile Include="Account\Lockout.aspx.designer.cs">
       <DependentUpon>Lockout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\Login.aspx.cs">
+    <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account\Login.aspx.designer.cs">
+    <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Manage.aspx.cs">
@@ -405,6 +419,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ADO CamperData Model.edmx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\CamperSearchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CamperSearchDataSet.xsd</DependentUpon>
+    </Content>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -418,6 +437,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="CamperInfoTable.cs">
       <DependentUpon>ADO CamperData Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CamperSearch.aspx.cs">
+      <DependentUpon>CamperSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CamperSearch.aspx.designer.cs">
+      <DependentUpon>CamperSearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="DatabaseUpdatePage.aspx.cs">
       <DependentUpon>DatabaseUpdatePage.aspx</DependentUpon>
@@ -433,26 +459,12 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CamperSearch.aspx.cs">
-      <DependentUpon>CamperSearch.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CamperSearch.aspx.designer.cs">
-      <DependentUpon>CamperSearch.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ForceCommit2.aspx.cs">
-      <DependentUpon>ForceCommit2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ForceCommit2.aspx.designer.cs">
-      <DependentUpon>ForceCommit2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -490,7 +502,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="ImportedExcelFile\" />
   </ItemGroup>
   <ItemGroup>

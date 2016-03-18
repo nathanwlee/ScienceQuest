@@ -26,7 +26,7 @@
                 <asp:LoginStatus ID="LoginStatus1" runat="server" />
             </h2>
             <p>
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MemberPages/Members.aspx">Members Only Page</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MemberPages/Member.aspx">Members Only Page</asp:HyperLink>
             </p>
             <p>&nbsp;</p>
             <h2>Camper Sign-In / Sign-Out System</h2>
