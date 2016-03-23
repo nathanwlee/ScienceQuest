@@ -15,6 +15,11 @@ namespace CamperSignInSystem
             //CamperDataGridView.DataSource = CamperDataForSearch;
             CamperDataGridView.DataBind();
         }
+
+        protected void CamperDataGridView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
         //protected void Page_Load(object sender, EventArgs e)
         //{
 
