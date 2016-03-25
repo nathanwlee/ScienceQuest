@@ -23,38 +23,26 @@
                 </LoggedInTemplate>
             </asp:LoginView>
             <h2>
-                <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut" ForeColor="Black" />
             </h2>
             <p>
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MemberPages/Member.aspx">Members Only Page</asp:HyperLink>
-            </p>
-            <p>&nbsp;</p>
-            <h2>Camper Sign-In / Sign-Out System</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
+                <asp:Button ID="Button1" runat="server" Text="Login Here" />
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MemberPages/Member.aspx" Visible="False">Members Only Page</asp:HyperLink>
             </p>
         </div>
         <div class="col-md-4">
-            <h2>Login</h2>
+            <h2>Camper Search</h2>
             <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                <asp:Button ID="Button2" runat="server" Text="Search Database Here" />
             </p>
         </div>
         <div class="col-md-4">
-            <h2>Undesignated Area</h2>
+            <h2>Database Modification</h2>
             <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                <asp:Button ID="Button3" runat="server" Text="Upload Files Here" />
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
+                &nbsp;</p>
         </div>
     </div>
 

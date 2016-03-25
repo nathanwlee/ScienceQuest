@@ -14,10 +14,10 @@ namespace CamperSignInSystem
 
         //}
 
-        protected void LoginStatus1_LoggingOut(object sender, LoginCancelEventArgs e)
-        {
+        //protected void LoginStatus1_LoggingOut(object sender, LoginCancelEventArgs e)
+        //{
 
-        }
+        //}
         //protected void Page_Load(object sender, EventArgs e)
         //{
 
