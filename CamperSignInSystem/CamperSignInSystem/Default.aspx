@@ -26,20 +26,23 @@
                 <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut" ForeColor="Black" />
             </h2>
             <p>
-                <asp:Button ID="Button1" runat="server" Text="Login Here" />
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MemberPages/Member.aspx" Visible="False">Members Only Page</asp:HyperLink>
+                <asp:Button ID="Button1" runat="server" Text="Login Here" Visible="False" />
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Login Here</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/MemberPages/Member.aspx" Visible="False">Members Only Page</asp:HyperLink>
             </p>
         </div>
         <div class="col-md-4">
             <h2>Camper Search</h2>
             <p>
-                <asp:Button ID="Button2" runat="server" Text="Search Database Here" />
+                <asp:Button ID="Button2" runat="server" Text="Search Database Here" OnClick="Button2_Click" Visible="False" />
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/CamperSearch.aspx">Search Database Here</asp:HyperLink>
             </p>
         </div>
         <div class="col-md-4">
             <h2>Database Modification</h2>
             <p>
-                <asp:Button ID="Button3" runat="server" Text="Upload Files Here" />
+                <asp:Button ID="Button3" runat="server" Text="Upload Files Here" Visible="False" />
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/DatabaseUpdatePage.aspx">Update Files Here</asp:HyperLink>
             </p>
             <p>
                 &nbsp;</p>
